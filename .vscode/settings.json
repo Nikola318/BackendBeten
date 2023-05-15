@@ -1,0 +1,34 @@
+{
+	"[php]": {
+		"editor.defaultFormatter": "junstyle.php-cs-fixer"
+	},
+	// Controls whether `editor.tabSize#` and `#editor.insertSpaces` will be automatically detected when a file is opened based on the file contents.
+	"editor.detectIndentation": false,
+	// Insert spaces when pressing `Tab`. This setting is overridden based on the file contents when `editor.detectIndentation` is on.
+	"editor.insertSpaces": false,
+	// The number of spaces a tab is equal to. This setting is overridden based on the file contents when `editor.detectIndentation` is on.
+	"editor.tabSize": 4,
+	// Format a file on save. A formatter must be available, the file must not be saved after delay, and the editor must not be shutting down.
+	"editor.formatOnSave": true,
+	// When enabled, insert a final new line at the end of the file when saving it.
+	"files.insertFinalNewline": true,
+	// Controls the signoff flag for all commits.
+	"git.alwaysSignOff": true,
+	// When set to true, commits will automatically be fetched from the default remote of the current Git repository. Setting to `all` will fetch from all remotes.
+	"git.autofetch": true,
+	// Stash any changes before pulling and restore them after successful pull.
+	"git.autoStash": true,
+	// Enables commit signing with GPG or X.509.
+	"git.enableCommitSigning": true,
+	// Points to the php-cs-fixer exectuable, eg: win: php-cs-fixer.bat, other: php-cs-fixer; or points to php-cs-fixer.phar path, eg: /full/path/of/php-cs-fixer.phar
+	"php-cs-fixer.executablePath": "${workspaceFolder}/vendor/bin/php-cs-fixer",
+	// Are risky fixers allowed?
+	"php-cs-fixer.allowRisky": true,
+	// PhpStan configuration path
+	"phpstan.configuration": "${workspaceFolder}/phpstan.neon",
+	"sonarlint.rules": {
+		"php:S105": {
+			"level": "off"
+		}
+	}
+}
